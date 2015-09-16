@@ -1,0 +1,260 @@
+package test;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.Shape;
+import java.awt.geom.GeneralPath;
+import java.awt.geom.Rectangle2D;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class Map {
+	private static Frames f;
+	private static Shape s;
+	private static Shape image;
+	private static GeneralPath gp;
+	private static GeneralPath gpimage;
+	private Rectangle object;
+	
+	private int x, y, w, h;
+	private int[] shadex;
+	private int size;
+	private double dx, dy;
+	private Object what;
+	
+	//private static double dt = .25, gravity = 9.81;
+	public Map(Frames f) {
+		Map.f = f;
+		gp = new GeneralPath();
+		s  = gp;
+		gpimage = new GeneralPath();
+		image  = gpimage;
+	}
+	public Map(Object what, int[] shadex) {
+		this.what = what;
+		this.shadex = shadex;
+		object = new Rectangle();
+	}
+	
+	public static void setPoint(int x, int y){//System.out.println("x: "+x+", y: "+y);
+		gp.moveTo(x, y);
+		gp.lineTo(x+30, y);
+		gp.lineTo(x+30, y+25);
+		gp.lineTo(x, y+25);
+		gp.closePath();
+		gpimage.moveTo(x+f.getInsets().left, y+f.getInsets().top);
+		gpimage.lineTo(x+f.getInsets().left+30, y+f.getInsets().top);
+		gpimage.lineTo(x+f.getInsets().left+30, y+f.getInsets().top+25);
+		gpimage.lineTo(x+f.getInsets().left, y+f.getInsets().top+25);
+		gpimage.closePath();
+	}
+	public static void loadMap(){
+		File file = new File("test/map.txt");
+		try {
+			BufferedReader b = new BufferedReader(new FileReader(file));
+			
+			b.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+	public int[] checkCollision(int x, int y, int w, int h, double dx, double dy, int c){
+		size = shadex[c];
+		System.out.println(x+" "+y+" "+dx+" "+dy);
+		if(dy == 0 && !s.intersects(x+size, y+1, w-2*size, h-1)){	//check flying
+			if(!((Characters) what).isMax()){//System.out.println("turning point");
+				dy=1.8;
+				((Characters) what).setDy(dy);
+				((Characters) what).setFall(true);
+			}
+		}
+		object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+		if(isValidMovement())
+			return new int[]{(int) (x+dx), (int) (y+dy)};
+		this.x  = x;
+		this.y  = y;
+		this.w  = w;
+		this.h  = h;
+		this.dx = dx;
+		this.dy = dy;
+		
+		return appropriateMovement();
+		
+	}
+	public boolean isValidMovement(){
+		if(s.intersects(object))
+			return false;
+		//System.out.println(true);
+		return true;
+	}
+	public int[] appropriateMovement(){
+		if(dy == 0){
+			double tenthx = dx/10;
+			if(dx > 0){			//moving to right
+				System.out.println("moving to right");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					object.setBounds(x+size, y+1, (int) (dx+w-2*size), h-2);
+					if(isValidMovement())
+						return new int[]{(int) (x+dx), (int) (y+dy)};
+				}
+			}else if(dx < 0){	//moving to left
+				System.out.println("moving to left");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					object.setBounds((int) (x+dx+size), y+1, w-2*size, h-2);
+					if(isValidMovement())
+						return new int[]{(int) (x+dx), y};
+				}
+			}else{				//not moving
+				System.out.println("not moving");
+				return new int[]{x, y};	//?
+			}
+		}
+		
+		
+		else if(dy > 0){
+			double tenthx = dx/10;
+			double tenthy = dy/10;
+			if(dx == 0){		//moving straight down
+				System.out.println("moving straight down");
+				for(int i=0;i<10;i++){
+					dy -= tenthy;
+					object.setBounds(x+size, y+1, w-2*size, (int) (dy+h-2));
+					if(isValidMovement())
+						return new int[]{x, (int) (y+dy)};
+				}
+			}else if(dx > 0){	//moving to right down
+				System.out.println("moving to right down");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					dy -= tenthy;
+					object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+					if(isValidMovement()){
+						((Characters) what).setStopped(true);
+						return new int[]{(int) (x+dx), (int) (y+dy)};
+					}
+				}
+				
+			}else{				//moving to left down
+				System.out.println("moving to left down");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					dy -= tenthy;
+					object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+					if(isValidMovement()){
+						((Characters) what).setStopped(true);
+						return new int[]{(int) (x+dx), (int) (y+dy)};
+					}
+				}
+				
+			}
+		}
+		
+		
+		else{
+			double tenthx = dx/10;
+			double tenthy = dy/10;
+			if(dx == 0){		//moving straight up
+				System.out.println("moving straight up");
+				for(int i=0;i<10;i++){
+					dy -= tenthy;
+					object.setBounds(x+size, (int) (y+dy+1), w-2*size, (int) (h-dy+2));
+					if(isValidMovement()){
+						object.setBounds(x+size, (int) (y+dy), w-2*size, (int) (h-dy+2));
+						if(isValidMovement()){System.out.println("hit right wall");
+							for(int j=0;j<i;j++){
+								dy += tenthy;
+								object.setBounds(x+size, (int) (y+dy+1), w-2*size, (int) (h-dy+2));
+								((Characters) what).setWalk(false);
+								((Characters) what).setRun(false);
+								if(!isValidMovement())
+									return new int[]{x, (int) (y+dy)};
+							}return new int[]{x, (int) (y+dy)};
+						}
+						hitAndFallVertically();
+						return new int[]{x, (int) (y+dy)};
+					}
+				}
+			}else if(dx > 0){	//moving to right up
+				System.out.println("moving to right up");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					dy -= tenthy;
+					object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+					if(isValidMovement()){
+						object.setBounds((int) (x+dx+size), (int) (y+dy), w-2*size, h-2);
+						if(isValidMovement()){System.out.println("hit right wall");
+							for(int j=0;j<i;j++){
+								dy += tenthy;
+								object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+								((Characters) what).setWalk(false);
+								((Characters) what).setRun(false);
+								if(!isValidMovement())
+									return new int[]{(int) (x+dx), (int) (y+dy-tenthy)};
+							}return new int[]{(int) (x+dx), (int) (y+dy)};
+						}
+						hitAndRebound();
+						return new int[]{(int) (x+dx), (int) (y+dy)};
+					}
+				}
+			}else{				//moving to left up
+				System.out.println("moving to left up");
+				for(int i=0;i<10;i++){
+					dx -= tenthx;
+					dy -= tenthy;
+					object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+					if(isValidMovement()){
+						object.setBounds((int) (x+dx+size), (int) (y+dy), w-2*size, h-2);
+						if(isValidMovement()){System.out.println("hit left wall");
+							for(int j=0;j<i;j++){
+								dy += tenthy;
+								object.setBounds((int) (x+dx+size), (int) (y+dy+1), w-2*size, h-2);
+								((Characters) what).setWalk(false);
+								((Characters) what).setRun(false);
+								if(!isValidMovement())
+									return new int[]{(int) (x+dx), (int) (y+dy-tenthy)};
+							}return new int[]{(int) (x+dx), (int) (y+dy)};
+						}
+						hitAndRebound();
+						return new int[]{(int) (x+dx), (int) (y+dy)};
+					}
+				}
+			}
+		}
+		return new int[]{x, y};
+	}
+	
+	
+	private void hitAndRebound() {
+		((Characters) what).setDx(((Characters) what).getDx()/3*4);
+		((Characters) what).setTempy(-((Characters) what).getTempy()/3*2);
+		((Characters) what).setDy(-((Characters) what).getDy()/3*2);
+		((Characters) what).setJump(false);
+		((Characters) what).setFall(true);
+	}
+	private void hitAndFallVertically() {
+		((Characters) what).setTempy(-((Characters) what).getTempy()/3*2);
+		((Characters) what).setDy(-((Characters) what).getDy()/3*2);
+		((Characters) what).setJump(false);
+		((Characters) what).setFall(true);
+		
+	}
+	public static void paint(Graphics g){
+		Graphics2D g2 = (Graphics2D)g;
+		g2.draw(image);
+/*		g.setColor(Color.white);
+		g.drawString("x:  "+x, f.getWidth()-70, 50);
+		g.drawString("y:  "+y, f.getWidth()-70, 60);
+		g.drawString("dx: "+dx, f.getWidth()-70, 70);
+		g.drawString("dy: "+dy, f.getWidth()-70, 80);
+*/		
+	}
+}

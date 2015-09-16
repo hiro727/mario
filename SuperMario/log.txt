@@ -1,0 +1,973 @@
+Streaming from : Resources.txt
+Streaming from : Resources.txt : r_a_cloud.bmp
+Streaming from : Resources.txt : r_b_cloud.bmp
+Streaming from : Resources.txt : r_c_cloud.bmp
+Streaming from : Resources.txt : r_d_cloud.bmp
+Streaming from : Resources.txt : r_e_cloud.bmp
+Streaming from : Resources.txt : r_f_cloud.bmp
+Streaming from : Resources.txt : r_g_ground.bmp
+Streaming from : Resources.txt : r_h_ground.bmp
+Streaming from : Resources.txt : r_i_grass.bmp
+Streaming from : Resources.txt : r_j_grass.bmp
+Streaming from : Resources.txt : r_k_grass.bmp
+Streaming from : Resources.txt : r_l_grass.bmp
+Streaming from : Resources.txt : r_m_grass.bmp
+Streaming from : Resources.txt : r_n_grass.bmp
+Streaming from : Resources.txt : r_o_grass.bmp
+Streaming from : Resources.txt : r_p_pipe.bmp
+Streaming from : Resources.txt : r_q_pipe.bmp
+Streaming from : Resources.txt : r_r_pipe.bmp
+Streaming from : Resources.txt : r_s_pipe.bmp
+Streaming from : Resources.txt : r_t_block.bmp
+Streaming from : Resources.txt : r_u_castle.bmp
+Streaming from : Resources.txt : r_v_castle.bmp
+Streaming from : Resources.txt : r_w_castle.bmp
+Streaming from : Resources.txt : r_x_castle.bmp
+Streaming from : Resources.txt : r_y_castle.bmp
+Streaming from : Resources.txt : r_z_castle.bmp
+Streaming from : Resources.txt : Mario_0_0.bmp
+Streaming from : Resources.txt : Mario_0_1.png
+Streaming from : Resources.txt : Mario_1_0.png
+Streaming from : Resources.txt : Mario_1_1.png
+Initializing - Character	Mario
+Initializing - Character	Luigi
+Initializing - Enemy		Goomba
+Initializing - Enemy		Bowser
+Streaming from : Area1-1.txt
+Loading GameMap : 1 - 1
+	000hh00000000abbc000000gg0g000000000000000000000000000000ggg
+	g00000ggggg00deef000000000000gggggg00gggg0000000000000ggg000
+	gg000ggabc00000000000gggg0gg000000g00g000ggg0000000ggg000000
+	ggg0gggdef00ggg00000g000000000h000g00g000000g000ggg000000000
+	hhh00000abc0000abc00000ggg00000000g00g0000000000000000000000
+	hhhh0000def0000def0000000000000000g00g0000000000000000000000
+	000000000000000000000000000000000000000000000000000000000000
+	ggggggg0gggggggg00ggggggggggg00ggggggg00ggggggg000gggggggggg
+	00000hh000000000000hhhhhh000000000g00000g0000000000000000000
+	0ggg00hh0000ggggg0000hhhh0000g00000g0000gabc0000000000000000
+	0000gg0000gg000h0h000hhh000g00abc00000000def0000000000000000
+	h00000g00gg0000h0h000h000g0000def0000g00g0000000000000000000
+	000000000000000hhh00000g00000000000000g000000000000000000000
+	ggggggggg00ggg00gggggggggggggggggggggggggggggggggggggggggggg
+	0000000000000000000000000000g0g00000000000000000000000000000
+	000000000gg000gg0000000000000g000000000000000000000000000000
+	00000000g000000000000000000000g00000000000000000000000000000
+	0000000g000000000gg000000000000g0000000000000000000000000000
+	000000g000000gg00000000000000000g000000000000000000000000000
+	ggggggg0gggggggg00gggggggggggggggggggggggggggggggggggggggggg
+Exception in thread "AWT-EventQueue-0" java.lang.NullPointerException
+	at models.Game.paint(Game.java:127)
+	at javax.swing.RepaintManager$4.run(Unknown Source)
+	at javax.swing.RepaintManager$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+	at javax.swing.RepaintManager.access$1300(Unknown Source)
+	at javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+	Accessing data of : Goomba
+	Accessing data of : Goomba
+	Accessing data of : Goomba
+	Accessing data of : Goomba
+
+Preparing Copy of Game Map : 1 - 1
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	Cloning instance of : Goomba
+	START.....
+		  Count			Time		||		  X	  Y		  DX	  DY
+
+		Count : 0	Ellapsed Time : 0	||	Mario : [100.0000000]	[175.0000000]		[5.1000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@dd808d
+3
+4 : smMapObjects.Ground@1df0db2
+4
+
+175.0		0
+5 : smMapObjects.Ground@1a7fb7
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 1	Ellapsed Time : 65	||	Mario : [105.1000000]	[175.0000000]		[5.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@dd808d
+3
+4 : smMapObjects.Ground@1df0db2
+4
+
+175.0		0
+5 : smMapObjects.Ground@1a7fb7
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 2	Ellapsed Time : 92	||	Mario : [110.3000000]	[175.0000000]		[5.3000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@dd808d
+3
+4 : smMapObjects.Ground@1df0db2
+4
+
+175.0		0
+5 : smMapObjects.Ground@1a7fb7
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 3	Ellapsed Time : 116	||	Mario : [115.6000000]	[175.0000000]		[5.4000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 4	Ellapsed Time : 142	||	Mario : [121.0000000]	[175.0000000]		[5.5000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 5	Ellapsed Time : 167	||	Mario : [126.5000000]	[175.0000000]		[5.6000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 6	Ellapsed Time : 193	||	Mario : [132.1000000]	[175.0000000]		[5.7000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 7	Ellapsed Time : 218	||	Mario : [137.8000000]	[175.0000000]		[5.8000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 8	Ellapsed Time : 243	||	Mario : [143.6000000]	[175.0000000]		[5.9000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1df0db2
+3
+4 : smMapObjects.Ground@1a7fb7
+4
+
+175.0		0
+5 : smMapObjects.Ground@747588
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 9	Ellapsed Time : 268	||	Mario : [149.5000000]	[175.0000000]		[6.0000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1a7fb7
+3
+4 : smMapObjects.Ground@747588
+4
+
+175.0		0
+5 : smMapObjects.Ground@1c2a35a
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 10	Ellapsed Time : 292	||	Mario : [155.5000000]	[175.0000000]		[6.1000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1a7fb7
+3
+4 : smMapObjects.Ground@747588
+4
+
+175.0		0
+5 : smMapObjects.Ground@1c2a35a
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 11	Ellapsed Time : 314	||	Mario : [161.6000000]	[175.0000000]		[6.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1a7fb7
+3
+4 : smMapObjects.Ground@747588
+4
+
+175.0		0
+5 : smMapObjects.Ground@1c2a35a
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 12	Ellapsed Time : 336	||	Mario : [167.8000000]	[175.0000000]		[6.3000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1a7fb7
+3
+4 : smMapObjects.Ground@747588
+4
+
+175.0		0
+5 : smMapObjects.Ground@1c2a35a
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 13	Ellapsed Time : 359	||	Mario : [174.1000000]	[175.0000000]		[6.4000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@747588
+3
+4 : smMapObjects.Ground@1c2a35a
+4
+
+175.0		0
+5 : null
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Å~ 
+Å~ Å~ Å~ 
+------
+
+		Count : 14	Ellapsed Time : 383	||	Mario : [180.5000000]	[175.0000000]		[6.5000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@747588
+3
+4 : smMapObjects.Ground@1c2a35a
+4
+
+175.0		0
+5 : null
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Å~ 
+Å~ Å~ Å~ 
+------
+
+		Count : 15	Ellapsed Time : 406	||	Mario : [187.0000000]	[175.0000000]		[6.6000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@747588
+3
+4 : smMapObjects.Ground@1c2a35a
+4
+
+175.0		0
+5 : null
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Å~ 
+Å~ Å~ Å~ 
+------
+
+		Count : 16	Ellapsed Time : 427	||	Mario : [193.6000000]	[175.0000000]		[6.7000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@747588
+3
+4 : smMapObjects.Ground@1c2a35a
+4
+
+175.0		0
+5 : null
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Å~ 
+Å~ Å~ Å~ 
+------
+
+		Count : 17	Ellapsed Time : 449	||	Mario : [200.3000000]	[175.0000000]		[6.8000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@747588
+3
+4 : smMapObjects.Ground@1c2a35a
+4
+
+175.0		0
+5 : null
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Å~ 
+Å~ Å~ Å~ 
+------
+
+		Count : 18	Ellapsed Time : 472	||	Mario : [207.1000000]	[175.0000000]		[6.9000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1c2a35a
+3
+4 : null
+5 : smMapObjects.Ground@9c0dcf
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Å~ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 19	Ellapsed Time : 496	||	Mario : [214.0000000]	[175.0000000]		[7.0000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1c2a35a
+3
+4 : null
+5 : smMapObjects.Ground@9c0dcf
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Å~ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 20	Ellapsed Time : 518	||	Mario : [221.0000000]	[175.0000000]		[7.1000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1c2a35a
+3
+4 : null
+5 : smMapObjects.Ground@9c0dcf
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Å~ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 21	Ellapsed Time : 540	||	Mario : [228.1000000]	[175.0000000]		[7.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@1c2a35a
+3
+4 : null
+5 : smMapObjects.Ground@9c0dcf
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Å~ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 22	Ellapsed Time : 564	||	Mario : [235.3000000]	[175.0000000]		[7.3000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : null
+4 : smMapObjects.Ground@9c0dcf
+4
+
+175.0		0
+5 : smMapObjects.Ground@a1b478
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Å~ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 23	Ellapsed Time : 587	||	Mario : [242.6000000]	[175.0000000]		[7.4000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : null
+4 : smMapObjects.Ground@9c0dcf
+4
+
+175.0		0
+5 : smMapObjects.Ground@a1b478
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Å~ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 24	Ellapsed Time : 609	||	Mario : [250.0000000]	[175.0000000]		[7.5000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : null
+4 : smMapObjects.Ground@9c0dcf
+4
+
+175.0		0
+5 : smMapObjects.Ground@a1b478
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Å~ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+			Animate Mario from : 0 to : 1
+				Temporary Animation Count : 0
+				Temporary Animation Count : 1
+				Temporary Animation Count : 2
+				Temporary Animation Count : 3
+				Temporary Animation Count : 4
+				Temporary Animation Count : 5
+				Temporary Animation Count : 6
+				Temporary Animation Count : 7
+				Temporary Animation Count : 8
+				Temporary Animation Count : 9
+				Temporary Animation Count : 10
+				Temporary Animation Count : 11
+				Temporary Animation Count : 12
+
+		Count : 25	Ellapsed Time : 1447	||	Mario : [257.5000000]	[175.0000000]		[7.6000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : null
+4 : smMapObjects.Ground@9c0dcf
+4
+
+175.0		0
+5 : smMapObjects.Ground@a1b478
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Å~ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 26	Ellapsed Time : 1473	||	Mario : [265.1000000]	[175.0000000]		[7.7000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@9c0dcf
+3
+4 : smMapObjects.Ground@a1b478
+4
+
+175.0		0
+5 : smMapObjects.Ground@15a7758
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 27	Ellapsed Time : 1498	||	Mario : [272.8000000]	[175.0000000]		[7.8000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@9c0dcf
+3
+4 : smMapObjects.Ground@a1b478
+4
+
+175.0		0
+5 : smMapObjects.Ground@15a7758
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 28	Ellapsed Time : 1522	||	Mario : [280.6000000]	[175.0000000]		[7.9000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@9c0dcf
+3
+4 : smMapObjects.Ground@a1b478
+4
+
+175.0		0
+5 : smMapObjects.Ground@15a7758
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 29	Ellapsed Time : 1544	||	Mario : [288.5000000]	[175.0000000]		[8.0000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@9c0dcf
+3
+4 : smMapObjects.Ground@a1b478
+4
+
+175.0		0
+5 : smMapObjects.Ground@15a7758
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 30	Ellapsed Time : 1569	||	Mario : [296.5000000]	[175.0000000]		[8.1000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@a1b478
+3
+4 : smMapObjects.Ground@15a7758
+4
+
+175.0		0
+5 : smMapObjects.Ground@4903ff
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 31	Ellapsed Time : 1593	||	Mario : [304.6000000]	[175.0000000]		[8.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@a1b478
+3
+4 : smMapObjects.Ground@15a7758
+4
+
+175.0		0
+5 : smMapObjects.Ground@4903ff
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 32	Ellapsed Time : 1615	||	Mario : [312.8000000]	[175.0000000]		[8.3000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@a1b478
+3
+4 : smMapObjects.Ground@15a7758
+4
+
+175.0		0
+5 : smMapObjects.Ground@4903ff
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 33	Ellapsed Time : 1637	||	Mario : [321.1000000]	[175.0000000]		[8.4000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@a1b478
+3
+4 : smMapObjects.Ground@15a7758
+4
+
+175.0		0
+5 : smMapObjects.Ground@4903ff
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 34	Ellapsed Time : 1661	||	Mario : [329.5000000]	[175.0000000]		[8.5000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@15a7758
+3
+4 : smMapObjects.Ground@4903ff
+4
+
+175.0		0
+5 : smMapObjects.Ground@17cd3f5
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 35	Ellapsed Time : 1683	||	Mario : [338.0000000]	[175.0000000]		[8.6000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@15a7758
+3
+4 : smMapObjects.Ground@4903ff
+4
+
+175.0		0
+5 : smMapObjects.Ground@17cd3f5
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 36	Ellapsed Time : 1708	||	Mario : [346.6000000]	[175.0000000]		[8.7000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@15a7758
+3
+4 : smMapObjects.Ground@4903ff
+4
+
+175.0		0
+5 : smMapObjects.Ground@17cd3f5
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 37	Ellapsed Time : 1733	||	Mario : [355.3000000]	[175.0000000]		[8.8000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@4903ff
+3
+4 : smMapObjects.Ground@17cd3f5
+4
+
+175.0		0
+5 : smMapObjects.Ground@1d818af
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 38	Ellapsed Time : 1761	||	Mario : [364.1000000]	[175.0000000]		[8.9000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@4903ff
+3
+4 : smMapObjects.Ground@17cd3f5
+4
+
+175.0		0
+5 : smMapObjects.Ground@1d818af
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 39	Ellapsed Time : 1790	||	Mario : [373.0000000]	[175.0000000]		[9.0000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@4903ff
+3
+4 : smMapObjects.Ground@17cd3f5
+4
+
+175.0		0
+5 : smMapObjects.Ground@1d818af
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 40	Ellapsed Time : 1815	||	Mario : [382.0000000]	[175.0000000]		[9.1000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@17cd3f5
+3
+4 : smMapObjects.Ground@1d818af
+4
+
+175.0		0
+5 : smMapObjects.Ground@1fe5afb
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 41	Ellapsed Time : 1841	||	Mario : [391.1000000]	[175.0000000]		[9.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@17cd3f5
+3
+4 : smMapObjects.Ground@1d818af
+4
+
+175.0		0
+5 : smMapObjects.Ground@1fe5afb
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+
+		Count : 42	Ellapsed Time : 1871	||	Mario : [400.3000000]	[175.0000000]		[4.2000000]	[0.0000000]	0 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@17cd3f5
+3
+4 : smMapObjects.Ground@1d818af
+4
+
+175.0		0
+5 : smMapObjects.Ground@1fe5afb
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+	||	Fireball : [422.29999999999967]	[156.0]
+		Count : 43	Ellapsed Time : 18970 : null
+1 : null
+2 : null
+3 : smMapObjects.Ground@17cd3f5
+3
+4 : smMapObjects.Ground@1d818af
+4
+
+175.0		0
+5 : smMapObjects.Ground@1fe5afb
+5
+6 : null
+7 : null
+8 : null
+
+Å~ Å~ Å~ 
+Åõ Åõ Åõ 
+Å~ Å~ Å~ 
+------
+	||	Fireball : [425.29999999999967]	[158.0]

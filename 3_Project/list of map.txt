@@ -1,0 +1,38 @@
+ 	sky
+!	block    - flushing  - 1 coin
+"	block    - flushing  - 11 coins
+#	block    - flushing  - power up item
+$	block    - flushing  - star
+%	block    - flushing  - 1 up mushroom
+&	block    - flushing  - vine
+'	block    - breakable - 1 coin
+(	block    - breakable - power up item
+)	block    - breakable - star
+*	block    - breakable - 1 up mushroom
++	block    - regular   - ground
+,	block    - breakable - 11 coins
+-	block    - breakable - no item
+.	block    - breakable - vine
+/	block    - regular   - steps
+0	starting point
+1	pipe     - left	top		* type
+2	pipe     - left	down/middle	* # + WARP #
+3	cloud    - left top 		* NUM
+4	cloud    - left down		* NUM
+5	mountain - left top		* NUM
+6	mountain - left down		* NUM
+7	grass
+8	flag
+9	head
+:	pole
+;	block	 - invisible - 11 coins
+=	block	 - invisible - power up item
+<	block	 - invisible - star
+>	block	 - invisible - 1 up mushroom
+?	block	 - invisible - vine
+@	castle	 - walls & sky
+A	castle	 - walls & walls
+B	castle	 - gate bottom
+C	castle	 - gate top
+D	castle	 - walls & gate right
+E	castle	 - walls & gate left

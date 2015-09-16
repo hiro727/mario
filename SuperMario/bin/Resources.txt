@@ -1,0 +1,39 @@
+26
+r_a_cloud.bmp BACKGROUND
+r_b_cloud.bmp BACKGROUND
+r_c_cloud.bmp BACKGROUND
+r_d_cloud.bmp BACKGROUND
+r_e_cloud.bmp BACKGROUND
+r_f_cloud.bmp BACKGROUND
+r_g_ground.bmp GROUND
+r_h_ground.bmp GROUND
+r_i_grass.bmp BACKGROUND
+r_j_grass.bmp BACKGROUND
+r_k_grass.bmp BACKGROUND
+r_l_grass.bmp BACKGROUND
+r_m_grass.bmp BACKGROUND
+r_n_grass.bmp BACKGROUND
+r_o_grass.bmp BACKGROUND
+r_p_pipe.bmp GROUND/OBJECT
+r_q_pipe.bmp GROUND/OBJECT
+r_r_pipe.bmp GROUND/OBJECT
+r_s_pipe.bmp GROUND/OBJECT
+r_t_block.bmp GROUND/OBJECT
+r_u_castle.bmp BACKGROUND
+r_v_castle.bmp BACKGROUND
+r_w_castle.bmp BACKGROUND
+r_x_castle.bmp BACKGROUND
+r_y_castle.bmp BACKGROUND
+r_z_castle.bmp BACKGROUND
+1
+Mario 2 3
+1
+Goomba 3 2
+ani_goomba.gif
+cru_goomba.png
+ani_goomba2.gif
+cru_goomba.png
+ani_goomba4.gif
+cru_goomba.png
+1
+Fireball

@@ -1,0 +1,80 @@
+goomba info (min, max, eachwidth, speed, dx)
+0
+2
+20
+.1
+-1
+	#, x, y
+14
+23
+260
+42
+260
+53
+260
+54
+260
+84
+100
+85
+100
+105
+260
+106
+260
+125
+260
+126
+260
+128
+260
+129
+260
+174
+260
+175
+260
+gkoopa troopa info (min, max, eachwidth, speed, dx)
+0
+2
+20
+.1
+-1
+	#, x, y
+1
+103
+260
+piranha plant info (min, max, eachwidth, speed, dx)
+0
+2
+22
+.1
+0
+	#, x, y
+1
+29
+220
+buzzy beetle info (min, max, eachwidth, speed, dx)
+0
+2
+20
+.1
+-1
+	#, x, y
+0
+cheep cheep info (min, max, eachwidth, speed, dx)
+0
+2
+20
+.1
+-1
+	#, x, y
+0
+spiny info (min, max, eachwidth, speed, dx)
+0
+2
+20
+.1
+-1
+	#, x, y
+0

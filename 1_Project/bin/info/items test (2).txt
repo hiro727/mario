@@ -1,0 +1,95 @@
+coin info (min, max, eachwidth, speed)
+0
+1
+8
+0.3
+	#, x, y
+20
+5
+240
+0
+6
+240
+0
+7
+240
+0
+8
+240
+0
+9
+240
+0
+10
+240
+0
+11
+240
+0
+12
+240
+0
+13
+240
+0
+14
+240
+0
+5
+220
+0
+6
+220
+0
+7
+220
+0
+8
+220
+0
+9
+220
+0
+10
+220
+0
+11
+220
+0
+12
+220
+0
+13
+220
+0
+14
+220
+0
+super mushroom info (min, max, eachwidth, speed)
+0
+0
+16
+0.1
+	#, x, y
+0
+1up mushroom info (min, max, eachwidth, speed)
+0
+0
+16
+0.1
+	#, x, y
+0
+fire flower info (min, max, eachwidth, speed)
+0
+4
+16
+0.4
+	#, x, y
+0
+starman info (min, max, eachwidth, speed)
+0
+4
+14
+0.2
+	#, x, y
+0

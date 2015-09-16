@@ -1,0 +1,62 @@
+0	-11501577
+1	img block - flushing
+2	img block - breakable
+3	img block - ground
+4	img block - step
+5	img pipe - upright top
+6	img pipe - upright bottom
+7	img pipe - left top
+8	img pipe - left bottom
+9	img cloud - top
+10	img cloud - bottom
+11	img mountain - top
+12	img mountain - bottom
+13	img grass
+14	img flag
+15	img head
+16	img pole
+17	img castle - wall & sky
+18	img castle - wall & wall
+19	img castle - gate bottom
+20	img castle - gate top
+21	img castle - wall & gate right
+22	img castle - wall & gate left
+done
+0	0
+1	1
+2	1
+3	1
+4	1
+5	1
+6	1
+7	2
+8	2
+9	2
+10	2
+11	3
+12	2
+13	2
+14	2
+15	4
+16	0
+17	5
+18	6
+19	9
+20	10
+21	11
+22	12
+23	13
+24	14
+25	15
+26	16
+27	0
+28	0
+29	0
+30	0
+31	0
+32	17
+33	18
+34	19
+35	20
+36	21
+37	22
