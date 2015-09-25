@@ -24,16 +24,19 @@ public class SuperMario {
 	
 	public SuperMario(String[] instructions) {
 		
-		assert(instructions != null);
-		assert(instructions.length >= 2);
+		//assert(instructions != null);
+		//assert(instructions.length >= 2);
 		
-		ResourceLoader.createInstance(instructions[0]);
+        String inst0 = (instructions != null && instructions.length > 0 ? instructions[0] : "Resources.txt");
+        String inst1 = (instructions != null && instructions.length > 1 ? instructions[1] : "Area1-1.txt");
+		
+        ResourceLoader.createInstance(inst0);
 		
 		game = SMGame.createInstance(600, 500);
 		
 		Resources.createInstance();
 		
-		ResourceLoader.getInstance().setNextInstruction(instructions[1]);
+		ResourceLoader.getInstance().setNextInstruction(inst1);
 		
 		setUp();
 		
